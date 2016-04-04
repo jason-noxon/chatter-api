@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "chatter-api"
+  },
+  "hostingPlanName": {
+    "value": "Default2"
+  },
+  "siteLocation": {
+    "value": "East US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "5baa1f3e-a8b1-4550-aacc-59807c58044c"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-EastUS"
+  }
+}
