@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Chatter.Api.DAL;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -18,6 +20,10 @@ namespace Chatter.Api
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            var chatterContext = new ChatterContext();
+            Database.SetInitializer(new ChatterInitializer());
+            chatterContext.Database.Initialize(true);
         }
     }
 }
